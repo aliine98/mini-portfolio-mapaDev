@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+
+:root {
+   font-family: 'VT323', monospace;
+   font-size: 18px;
+}
+
+body {
+   background: url(../imagens/fundo-site.jpg) center / cover no-repeat;
+   min-height: 100vh;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   padding: 30px;
+   color: #fdf1fc;
+}
+
+.cartao {
+   background-color: #070d12;
+   width: 370px;
+   border: 2px solid #e126d9;
+   border-radius: 10px;
+   overflow: hidden;
+}
+
+.cartao .minhas-informacoes {
+   padding-top: 20px;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   gap: 10px;
+}
+
+.cartao .minhas-informacoes img {
+   width: 120px;
+   border-radius: 100px;
+   border: 4px solid #02d08f;
+}
+
+.cartao .minhas-informacoes .nome {
+   font-size: 1.5rem;
+}
+
+.cartao .minhas-informacoes .cargo {
+   font-size: 1.2rem;
+   color: #b8bbc5;
+}
+
+.cartao .conteudo {
+   margin-top: 10px;
+}
+
+.cartao .abas {
+   display: flex;
+}
+
+.cartao .abas img {
+   width: 30px;
+}
+
+.cartao .abas .aba {
+   width: 50%;
+   display: flex;
+   justify-content: center;
+   padding: 10px 0;
+   cursor: pointer;
+   transition: background-color 0.3s ease-in-out;
+}
+
+.cartao .abas .aba.selecionado,
+.cartao .informacoes-abas {
+   background-color: #262626;
+}
+
+.cartao .abas .aba:hover {
+   background-color: #414141;
+}
+
+.informacoes-abas .informacao {
+   min-height: 260px;
+   padding: 15px;
+   display: none;
+}
+
+.informacoes-abas .informacao.selecionado {
+   display: block;
+}
+
+.informacoes-abas .sub-titulo {
+   font-size: 1.2rem;
+   text-align: center;
+   margin-bottom: 25px;
+}
+
+.informacoes-abas .descricao {
+   font-size: 1.1rem;
+   max-height: 200px;
+   overflow-y: auto;
+   padding-right: 15px;
+   text-align: justify;
+}
+
+.informacoes-abas .descricao span {
+   color: #02d08f;
+}
+
+.redes-sociais {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   gap: 25px;
+   max-height: 200px;
+   overflow-y: auto;
+}
+
+.redes-sociais li a {
+   display: block;
+   width: 250px;
+   padding: 15px;
+   text-align: center;
+   font-size: 1.1rem;
+   color: #f3f3f3;
+   border-radius: 5px;
+   transition: opacity 0.3s ease-in-out;
+}
+
+.redes-sociais li a:hover {
+   opacity: 0.7;
+}
+
+.redes-sociais .linkedin {
+   background-color: #1d87bd;
+}
+
+.redes-sociais .github {
+   background-color: #6e5494;
+}
+
+.redes-sociais .perfil-alura {
+   background-color: darkblue;
+}
